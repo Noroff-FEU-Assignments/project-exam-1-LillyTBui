@@ -1,0 +1,126 @@
+/** @format */
+
+@import "variables.css";
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  color: var(--color-light-black);
+  font-size: 16px;
+  font-family: "Lora";
+}
+
+h1, h2, li, a{
+    font-family: "Montserrat";
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header > #main_nav {
+  order: 2;
+}
+
+header > #sub_nav {
+  order: 1;
+  width: 100%;
+}
+
+.logo-container {
+  margin: auto;
+}
+.logo {
+  height: 75px;
+}
+
+#main_nav {
+  top: 50px;
+  width: 100%;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.navbar {
+  display: none;
+  background-color: var(--color-light-beige);
+  top: 50px;
+}
+
+ul {
+  padding: 5px 0px 0px 5px;
+}
+
+li {
+  list-style: none;
+  padding: 10px 20px;
+}
+
+#sub_nav li {
+  border-bottom: 1px solid white;
+}
+
+#main_nav ul {
+  margin-top: 20px;
+}
+
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ .navbar {
+  display: block;
+}
+
+#hamburger-icon {
+  color: var(--color-light-black);
+  margin: 30px 0px 0px 20px;
+}
+
+.social-media {
+  padding: 15px;
+}
+.social-media > * {
+  padding: 0px 5px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: var(--color-light-beige);
+    padding: 30px 0px;
+  }
+
+
+/* LInks */
+a {
+  text-decoration: none;
+  color: var(--color-light-black);
+  text-align: center;
+}
+
+.link_underline{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+/** Button **/
+
+button {
+    background-color: var(--color-blue);
+    font-weight: bold;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    display: flex;
+    margin: 20px auto;
+}

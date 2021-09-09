@@ -1,0 +1,173 @@
+/** @format */
+
+.first-post {
+  background-color: var(--color-beige);
+  padding: 40px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.first-post h2 {
+  font-weight: 400;
+}
+
+.first-post p {
+  max-width: 250px;
+  padding: 20px 0px;
+  margin: auto;
+}
+
+.first-post img {
+  padding-top: 20px;
+  height: 200px;
+  width: 200px;
+}
+
+.second-post {
+  background-color: var(--color-light-beige);
+  padding: 40px;
+}
+
+.second-post p {
+  max-width: 250px;
+  padding: 20px 0px;
+}
+
+/** all post **/
+.explore-all-post {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 110px;
+  background-image: url("../images/background-posts.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+}
+
+.explore-all-post h2 {
+  font-size: 22px;
+  margin-bottom: 30px;
+  color: var(--color-light-black);
+  letter-spacing: 1px;
+}
+
+.all-post-btn {
+  color: var(--color-light-black);
+  border: 2px solid var(--color-light-black);
+  padding: 10px 20px;
+  font-weight: 600;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+.all-post-btn:hover {
+  background-color: var(--color-light-black);
+  color: white;
+}
+
+/** Latest posts **/
+.latest-post{
+  text-align: center;
+  font-family: "Montserrat";
+  margin: 30px;
+}
+
+.latest-post h2{
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.latest-post-title{
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.latest-post__container{
+  display:flex;
+  flex-direction: row;
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+}
+
+.general-post{
+  max-width: 250px;
+  text-align: left;
+  margin: 20px 20px 30px 20px;
+}
+
+.general-post h3{
+  text-transform: uppercase;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+
+.category-title{
+  color: var(--color-dark-blue);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.general-post h4{
+  font-weight: 400;
+}
+
+/** Categories **/
+
+.categories {
+  margin: 50px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.categories h2 {
+  font-family: "Great Vibes";
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.polaroid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 1px 1px 9px gray;
+  padding: 20px 15px 40px 15px;
+  max-width: 200px;
+  margin-bottom: 30px;
+}
+
+.category-img {
+  width: 200px;
+  height: 200px;
+}
+
+.category-btn {
+  border: 6px double white;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  background-color: var(--color-blue);
+}
+
+.post{
+  text-align: center;
+  margin: 20px auto;
+  max-width: 250px;
+}
+
+.post-img {
+  max-width: 100%;
+  height: 250px;
+  background-repeat: no-repeat;
+}
+
+.post h2 {
+  background-color: #d1dfe8;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}

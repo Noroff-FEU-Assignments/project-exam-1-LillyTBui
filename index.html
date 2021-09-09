@@ -1,11 +1,14 @@
 <!-- @format -->
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Homepage of Sakura's travel blog. ">
     <title>The Happy Tourist | Homepage</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +22,17 @@
   </head>
   <body>
     <header>
-      <nav id="main_nav">
+      <label for="hamburger-menu"><i class="fas fa-bars fa-lg" id="hamburger-icon"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="logo-container">
+        <a href="index.html"
+        ><img
+          src="images/logo.jpg"
+          alt="Logo of the Happy Tourist"
+          class="logo"
+      /></a>
+      </div>
+      <nav id="main_nav" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -31,13 +44,7 @@
           <i class="fab fa-youtube fa-2x"></i>
         </div>
       </nav>
-      <nav>
-        <a href="index.html"
-          ><img
-            src="images/logo.jpg"
-            alt="Logo of the Happy Tourist"
-            class="logo"
-        /></a>
+      <nav id="sub_nav" class="navbar">
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="destinations.html">Destionation</a></li>
@@ -48,7 +55,9 @@
     </header>
 
     <main>
+      
       <section class="landing-page">
+        <div class="featured-posts"></div>
         <div class="second-post">
           <h1>About the happy tourist</h1>
           <p>
@@ -57,45 +66,48 @@
             on this blog I will share tips and experiences I have Learned so
             far.
           </p>
-          <a href="">Learn more</a>
+          <a href="about.html" class="link_underline">Learn more</a>
         </div>
         <div class="first-post">
           <h2>Next month's destination</h2>
+          <img src="images/seoul.jpg" alt="Spring in Seoul, South Korea">
           <p>
             The next month I am going to South Korea. In this article I will
             share with you my packing tips when I am going to a new foreign
             country. It is essential to be good prepaired before visiting a new
             country to make the best out of your stay!
           </p>
-          <a href="">Explore</a>
+          <a href="" class="link_underline">View more</a>
         </div>
       </section>
       <section class="latest-post">
           <h2>Latest posts</h2>
-          <h3>Top articles and tips</h3>
+          <h3 class="latest-post-title">Top articles and tips</h3>
+          <div class="latest-post__container"></div>
       </section>
       <section class="explore-all-post">
         <h2>Explore all of my blog posts</h2>
-        <a href="blog.html">View now</a>
+        <a href="blog.html" class="all-post-btn">View now</a>
       </section>
       <section class="categories">
         <h2>Categories</h2>
-        <div id="category_destination">
-          <img src="images/heron-tower.jpg" alt="heron tower in UK with sunset">
-          <a href="">Destinations</a>
+        <div id="category_destination" class="polaroid">
+          <img src="images/heron-tower.jpg"  class="category-img" alt="heron tower in UK with sunset">
+          <a href="" class="category-btn">Destinations</a>
         </div>
-        <div id="category_inspiration">
-          <img src="images/palm-trees-wind.jpg" alt="palm trees blowing in the wind">
-          <a href="">Inspiration</a>
+        <div id="category_inspiration" class="polaroid">
+          <img src="images/palm-trees-wind.jpg" class="category-img" alt="palm trees blowing in the wind">
+          <a href="" class="category-btn">Inspiration</a>
         </div>
-        <div id="category_tips">
-          <img src="images/suitcase.jpg" alt="packed suitcase">
-          <a href="">Tips</a>
+        <div id="category_tips" class="polaroid">
+          <img src="images/suitcase.jpg" class="category-img" alt="packed suitcase">
+          <a href="" class="category-btn">Tips</a>
         </div>
       </section>
     </main>
     <footer>
         <p id="copyright">Copyright @ 2021 The Happy Tourist</p>
     </footer>
+    <script src="js/index.js" type="module"></script>
   </body>
 </html>

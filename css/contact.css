@@ -1,0 +1,76 @@
+/** @format */
+
+@import "variables.css";
+
+.contact-text {
+  border-top: 2px solid white;
+  background-color: var(--color-light-beige);
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-text div {
+  max-width: 400px;
+  margin: auto;
+}
+.contact-text p {
+  padding: 10px;
+}
+
+.contact-text h1 {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.contact-info {
+  padding: 0px 0px 20px 30px;
+}
+
+.contact-info h2 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.social {
+  border-left: 3px solid var(--color-blue);
+  margin-top: 30px;
+  padding-left: 10px;
+}
+
+textarea,
+input {
+  display: block;
+  width: 100%;
+  padding: 7px;
+  margin: 5px 0px;
+}
+
+#contact-form {
+  max-width: 400px;
+  padding: 30px 40px 10px 40px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  margin-bottom: 6px;
+}
+
+.success {
+  display: none;
+  color: green;
+  text-align: center;
+  margin: 20px 40px;
+  padding: 10px;
+  border: 1px solid green;
+  background-color: #c0ec83;
+}
+
+.success::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1d8";
+  margin-right: 10px;
+  color: green;
+}
