@@ -1,0 +1,51 @@
+#profile-img {
+  max-width: 100%;
+}
+
+.about {
+  background-color: var(--color-light-beige);
+  padding: 20px;
+  text-align: center;
+}
+
+.about h1,
+p {
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  display: inline-block;
+}
+
+.disclaimer {
+  background-color: var(--color-light-pink);
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  position: relative;
+  margin: 30px auto;
+}
+
+.disclaimer > * {
+  position: absolute;
+  padding-top: 50px;
+  font-style: italic;
+}
+
+.disclaimer-container h2 {
+  padding-bottom: 10px;
+  font-family: "Lora";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.about_social-media {
+  text-align: center;
+}
+
+.fa-instagram,
+.fa-facebook-square {
+  border-right: 1px solid var(--color-light-black);
+  padding-right: 10px;
+}

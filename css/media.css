@@ -1,0 +1,71 @@
+@media (min-width: 600px) {
+  /* index */
+  .viewport-container {
+    width: 500px;
+  }
+  .viewport {
+    width: 400px;
+  }
+  .general-post {
+    padding: 0px 10px;
+  }
+
+  .categories-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .categories-container > * {
+    margin: 20px 10px 20px 10px;
+  }
+}
+
+@media (min-width: 800px) {
+  /* index */
+  .viewport-container {
+    width: 750px;
+  }
+  .viewport {
+    width: 630px;
+  }
+
+  .categories-container > * {
+    margin: 20px 20px 40px 20px;
+  }
+
+  .polaroid {
+    max-width: 200px;
+    padding: 20px 15px 40px 15px;
+  }
+
+  .category-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .category-btn {
+    font-size: 16px;
+    padding: 10px 40px;
+  }
+}
+
+@media (min-width: 1000px) {
+  /* index */
+  .viewport-container {
+    width: 900px;
+  }
+  .viewport {
+    width: 850px;
+  }
+
+  .explore-all-post {
+    height: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* index */
+  .explore-all-post {
+    height: 300px;
+  }
+}

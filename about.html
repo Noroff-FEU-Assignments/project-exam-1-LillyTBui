@@ -8,18 +8,22 @@
     <title>The Happy Tourist | Homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="CSS/about.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;1,400;1,600&family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/b9235904b4.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b9235904b4.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <nav id="main_nav">
+      <label for="hamburger-menu"><i class="fas fa-bars fa-lg" id="hamburger-icon"></i></label>
+      <input type="checkbox" id="hamburger-menu" />
+      <div class="logo-container">
+        <a href="index.html"><img src="images/logo.jpg" alt="Logo of the Happy Tourist" class="logo" /></a>
+      </div>
+      <nav id="main_nav" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="blog.html">Blog</a></li>
@@ -31,13 +35,7 @@
           <i class="fab fa-youtube fa-2x"></i>
         </div>
       </nav>
-      <nav>
-        <a href="index.html"
-          ><img
-            src="images/logo.jpg"
-            alt="Logo of the Happy Tourist"
-            class="logo"
-        /></a>
+      <nav id="sub_nav" class="navbar">
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="destinations.html">Destionation</a></li>
@@ -48,34 +46,35 @@
     </header>
     <main>
       <section>
-        <img src="images/profile-picture1.jpg" alt="side profile picture of author">
+        <img src="images/profile-picture1.jpg" alt="side profile picture of author" id="profile-img" />
         <div class="about">
           <h1>About me</h1>
           <p>
-            Hi! I am a student living best of both worlds by traveling around
-            the world while finishing my studies in Front-end development. Here
-            on this blog I will share tips and experiences I have Learned so
-            far.
+            Hi! I am a student living best of both worlds by traveling around the world while finishing my studies in
+            Front-end development. Here on this blog I will share tips and experiences I have Learned so far.
           </p>
           <p>
-            Being able to travel as much as I have Been able to do has Been such
-            a Joy and I hope you will find this blog useful when you will set
-            out on your Adventure.
+            Being able to travel as much as I have Been able to do has Been such a Joy and I hope you will find this
+            blog useful when you will set out on your Adventure.
           </p>
-          <a href="contact.html">Contact</a>
+          <a href="contact.html" class="blue-btn about-btn">Contact</a>
         </div>
         <div class="disclaimer">
+          <div class="disclaimer-container">
             <h2>Disclaimer</h2>
-            <p>This blog is a part of a project exam. I do not own any of these pictures and the texts are fictional.</p>
+            <p>
+              This blog is a part of a project exam. I do not own any of these pictures and the texts are fictional.
+            </p>
+          </div>
         </div>
       </section>
       <section class="about_social-media">
-          <h3>Find me on</h3>
-          <div class="social-media">
-            <i class="fab fa-instagram fa-2x"></i>
-            <i class="fab fa-facebook-square fa-2x"></i>
-            <i class="fab fa-youtube fa-2x"></i>
-          </div>
+        <h3>Find me on</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram fa-2x"></i>
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-youtube fa-2x"></i>
+        </div>
       </section>
     </main>
     <footer>

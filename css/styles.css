@@ -13,8 +13,11 @@ body {
   font-family: "Lora";
 }
 
-h1, h2, li, a{
-    font-family: "Montserrat";
+h1,
+h2,
+li,
+a {
+  font-family: "Montserrat";
 }
 
 header {
@@ -36,7 +39,7 @@ header > #sub_nav {
   margin: auto;
 }
 .logo {
-  height: 75px;
+  height: 90px;
 }
 
 #main_nav {
@@ -91,11 +94,10 @@ li {
 
 /* footer */
 footer {
-    text-align: center;
-    background-color: var(--color-light-beige);
-    padding: 30px 0px;
-  }
-
+  text-align: center;
+  background-color: var(--color-light-beige);
+  padding: 30px 0px;
+}
 
 /* LInks */
 a {
@@ -104,23 +106,22 @@ a {
   text-align: center;
 }
 
-.link_underline{
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    text-transform: uppercase;
-    font-weight: 600;
+.link_underline {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-
 
 /** Button **/
 
-button {
-    background-color: var(--color-blue);
-    font-weight: bold;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    color: white;
-    border: none;
-    display: flex;
-    margin: 20px auto;
+.blue-btn {
+  background-color: var(--color-blue);
+  font-weight: bold;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  display: flex;
+  margin: 20px auto;
 }

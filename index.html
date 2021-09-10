@@ -5,32 +5,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Homepage of Sakura's travel blog. ">
+    <meta name="description" content="Homepage of Sakura's travel blog. " />
     <title>The Happy Tourist | Homepage</title>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
+    <link href="css/media.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;1,400;1,600&family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/b9235904b4.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b9235904b4.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
       <label for="hamburger-menu"><i class="fas fa-bars fa-lg" id="hamburger-icon"></i></label>
       <input type="checkbox" id="hamburger-menu" />
       <div class="logo-container">
-        <a href="index.html"
-        ><img
-          src="images/logo.jpg"
-          alt="Logo of the Happy Tourist"
-          class="logo"
-      /></a>
+        <a href="index.html"><img src="images/logo.jpg" alt="Logo of the Happy Tourist" class="logo" /></a>
       </div>
       <nav id="main_nav" class="navbar">
         <ul>
@@ -55,35 +48,37 @@
     </header>
 
     <main>
-      
       <section class="landing-page">
         <div class="featured-posts"></div>
         <div class="second-post">
           <h1>About the happy tourist</h1>
           <p>
-            Hi! I am a student living best of both worlds by traveling around
-            the world while finishing my studies in Front-end development. Here
-            on this blog I will share tips and experiences I have Learned so
-            far.
+            Hi! I am a student living best of both worlds by traveling around the world while finishing my studies in
+            Front-end development. Here on this blog I will share tips and experiences I have Learned so far.
           </p>
           <a href="about.html" class="link_underline">Learn more</a>
         </div>
         <div class="first-post">
           <h2>Next month's destination</h2>
-          <img src="images/seoul.jpg" alt="Spring in Seoul, South Korea">
+          <img src="images/seoul.jpg" alt="Spring in Seoul, South Korea" />
           <p>
-            The next month I am going to South Korea. In this article I will
-            share with you my packing tips when I am going to a new foreign
-            country. It is essential to be good prepaired before visiting a new
-            country to make the best out of your stay!
+            The next month I am going to South Korea. In this article I will share with you my packing tips when I am
+            going to a new foreign country. It is essential to be good prepaired before visiting a new country to make
+            the best out of your stay!
           </p>
           <a href="" class="link_underline">View more</a>
         </div>
       </section>
       <section class="latest-post">
-          <h2>Latest posts</h2>
-          <h3 class="latest-post-title">Top articles and tips</h3>
-          <div class="latest-post__container"></div>
+        <h2>Latest posts</h2>
+        <h3 class="latest-post-title">Top articles and tips</h3>
+        <div class="viewport-container">
+          <i class="fas fa-angle-double-left left"></i>
+          <div class="viewport">
+            <div class="latest-post__container"></div>
+          </div>
+          <i class="fas fa-angle-double-right right"></i>
+        </div>
       </section>
       <section class="explore-all-post">
         <h2>Explore all of my blog posts</h2>
@@ -91,22 +86,24 @@
       </section>
       <section class="categories">
         <h2>Categories</h2>
-        <div id="category_destination" class="polaroid">
-          <img src="images/heron-tower.jpg"  class="category-img" alt="heron tower in UK with sunset">
-          <a href="" class="category-btn">Destinations</a>
-        </div>
-        <div id="category_inspiration" class="polaroid">
-          <img src="images/palm-trees-wind.jpg" class="category-img" alt="palm trees blowing in the wind">
-          <a href="" class="category-btn">Inspiration</a>
-        </div>
-        <div id="category_tips" class="polaroid">
-          <img src="images/suitcase.jpg" class="category-img" alt="packed suitcase">
-          <a href="" class="category-btn">Tips</a>
+        <div class="categories-container">
+          <div id="category_destination" class="polaroid">
+            <img src="images/heron-tower.jpg" class="category-img" alt="heron tower in UK with sunset" />
+            <a href="" class="category-btn">Destinations</a>
+          </div>
+          <div id="category_inspiration" class="polaroid">
+            <img src="images/palm-trees-wind.jpg" class="category-img" alt="palm trees blowing in the wind" />
+            <a href="" class="category-btn">Inspiration</a>
+          </div>
+          <div id="category_tips" class="polaroid">
+            <img src="images/suitcase.jpg" class="category-img" alt="packed suitcase" />
+            <a href="" class="category-btn">Tips</a>
+          </div>
         </div>
       </section>
     </main>
     <footer>
-        <p id="copyright">Copyright @ 2021 The Happy Tourist</p>
+      <p id="copyright">Copyright @ 2021 The Happy Tourist</p>
     </footer>
     <script src="js/index.js" type="module"></script>
   </body>
