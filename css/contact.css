@@ -2,6 +2,10 @@
 
 @import "variables.css";
 
+.contact > * {
+  margin: auto;
+}
+
 .contact-text {
   border-top: 2px solid white;
   background-color: var(--color-light-beige);

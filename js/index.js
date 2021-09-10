@@ -3,22 +3,23 @@ const baseURL = "https://sunnyday.one/happy-tourist/wp-json/wp/v2/posts?_embed";
 const featuredPost = baseURL + "&tags=4";
 const generalPost = baseURL + "&categories_exclude=1";
 
-const featuredContainer = document.querySelector(".featured-posts");
+const featuredContainer = document.querySelector(".landing-page");
 const postContainer = document.querySelector(".latest-post__container");
+
+let numbOfPost = 0;
 
 async function getPosts(url) {
   const response = await fetch(url);
   const posts = await response.json();
-  /*console.log(posts);
-    console.log(posts[1].title.rendered); //get title
-    console.log(posts[1]._embedded['wp:featuredmedia']['0'].source_url);*/
+
   posts.forEach(createPost);
 }
 
 function createPost(post) {
+  numbOfPost++;
   featuredContainer.innerHTML += `
-    <div class="post">
-        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" class="post-img">
+    <div class="post post${numbOfPost}">
+        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}">
         <h2>${post.title.rendered}</h2>
     </div>
     `;
@@ -68,7 +69,7 @@ function createCarousel() {
     maxCard = 9;
   } else if (viewPortWidth === 750) {
     maxCard = 8;
-  } else if (viewPortWidth === 900) {
+  } else if (viewPortWidth >= 900) {
     maxCard = 3;
     cardWidth *= 4;
     transitionTime = "1s";

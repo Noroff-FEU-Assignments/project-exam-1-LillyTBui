@@ -1,10 +1,17 @@
 /** @format */
 
+.landing-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
 .first-post {
   background-color: var(--color-beige);
   padding: 40px;
   text-align: center;
   margin: 20px 0px;
+  order: 3;
 }
 
 .first-post h2 {
@@ -26,6 +33,7 @@
 .second-post {
   background-color: var(--color-light-beige);
   padding: 40px;
+  order: 4;
 }
 
 .second-post p {
@@ -35,12 +43,14 @@
 
 .post {
   text-align: center;
-  margin: 20px auto;
-  max-width: 190px;
+  margin: 10px auto;
+  max-width: 200px;
+  order: 2;
 }
 
+.post img,
 .post-img {
-  width: 190px;
+  width: 200px;
   height: 250px;
   background-repeat: no-repeat;
 }
@@ -56,7 +66,7 @@
 .latest-post {
   text-align: center;
   font-family: "Montserrat";
-  margin: 30px;
+  margin: 60px 30px;
 }
 
 .latest-post h2 {
@@ -67,7 +77,6 @@
 .latest-post-title {
   font-size: 16px;
   margin: 10px;
-  font-weight: 400;
   color: var(--color-blue);
 }
 
@@ -75,7 +84,7 @@
   display: flex;
   align-items: center;
   width: 250px;
-  margin: auto;
+  margin: 30px auto;
 }
 
 .viewport-container i {

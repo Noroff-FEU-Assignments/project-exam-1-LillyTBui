@@ -8,6 +8,7 @@
     <title>The Happy Tourist | Homepage</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,59 +56,61 @@
           <p>Feel free to contact me Here, by social media or email.</p>
         </div>
       </section>
-      <section class="contact-info">
-        <div class="contact-social">
-          <div class="social-email social">
-            <h2>Email</h2>
-            <p>happytourist@email.com</p>
+      <section class="contact-container">
+        <section class="contact-info">
+          <div class="contact-social">
+            <div class="social-email social">
+              <h2>Email</h2>
+              <p>happytourist@email.com</p>
+            </div>
+            <div class="social-facebook social">
+              <h2>Facebook</h2>
+              <p>Facebook.com/happytourist</p>
+            </div>
+            <div class="social-instagram social">
+              <h2>Instagram</h2>
+              <p>Instagram.com/happytourist/</p>
+            </div>
+            <div class="social-youtube social">
+              <h2>Youtube</h2>
+              <p>youtube.com/happytourist/</p>
+            </div>
           </div>
-          <div class="social-facebook social">
-            <h2>Facebook</h2>
-            <p>Facebook.com/happytourist</p>
-          </div>
-          <div class="social-instagram social">
-            <h2>Instagram</h2>
-            <p>Instagram.com/happytourist/</p>
-          </div>
-          <div class="social-youtube social">
-            <h2>Youtube</h2>
-            <p>youtube.com/happytourist/</p>
-          </div>
-        </div>
-      </section>
-      <section class="contact">
-        <div class="success">Your query has been received!</div>
-        <form id="contact-form">
-          <div>
-            <label>
-              Name
-              <input type="text" name="name" id="name" />
-            </label>
-            <div class="form-error" id="nameError">Please enter a valid name</div>
-          </div>
-          <div>
-            <label>
-              Email
-              <input type="email" name="email" id="email" />
-            </label>
-            <div class="form-error" id="emailError">Please enter a valid email</div>
-          </div>
-          <div>
-            <label>
-              Subject
-              <input type="text" name="subject" id="subject" />
-            </label>
-            <div class="form-error" id="subjectError">Please enter more than 15 characters</div>
-          </div>
-          <div>
-            <label>
-              Message
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            </label>
-            <div class="form-error" id="messageError">Please enter more than 25 characters</div>
-          </div>
-          <button class="blue-btn">Send</button>
-        </form>
+        </section>
+        <section class="contact">
+          <div class="success">Your query has been received!</div>
+          <form id="contact-form">
+            <div>
+              <label>
+                Name
+                <input type="text" name="name" id="name" />
+              </label>
+              <div class="form-error" id="nameError">Please enter a valid name</div>
+            </div>
+            <div>
+              <label>
+                Email
+                <input type="email" name="email" id="email" />
+              </label>
+              <div class="form-error" id="emailError">Please enter a valid email</div>
+            </div>
+            <div>
+              <label>
+                Subject
+                <input type="text" name="subject" id="subject" />
+              </label>
+              <div class="form-error" id="subjectError">Please enter more than 15 characters</div>
+            </div>
+            <div>
+              <label>
+                Message
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              </label>
+              <div class="form-error" id="messageError">Please enter more than 25 characters</div>
+            </div>
+            <button class="blue-btn">Send</button>
+          </form>
+        </section>
       </section>
     </main>
     <footer>

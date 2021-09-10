@@ -8,6 +8,11 @@
   text-align: center;
 }
 
+.about > * {
+  max-width: 400px;
+  margin: 20px auto;
+}
+
 .about h1,
 p {
   margin-bottom: 20px;

@@ -23,7 +23,7 @@ function validateForm(event) {
   validSubject = false;
   validMessage = false;
 
-  if (nameElement.value.trim().length > 0) {
+  if (nameElement.value.trim().length >= 5) {
     nameError.style.display = "none";
     validName = true;
   } else {
