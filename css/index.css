@@ -58,8 +58,12 @@
 .post h2 {
   background-color: #d1dfe8;
   padding: 10px;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
+}
+
+.post h2:hover {
+  font-weight: bold;
 }
 
 /** Latest posts **/
