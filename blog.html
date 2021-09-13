@@ -12,56 +12,53 @@
       href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;1,400;1,600&family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <script
-      src="https://kit.fontawesome.com/b9235904b4.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/b9235904b4.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <nav id="main_nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="social-media">
-          <i class="fab fa-instagram fa-2x"></i>
-          <i class="fab fa-facebook-square fa-2x"></i>
-          <i class="fab fa-youtube fa-2x"></i>
-        </div>
-      </nav>
-      <nav>
-        <a href="index.html"
-          ><img
-            src="images/logo.jpg"
-            alt="Logo of the Happy Tourist"
-            class="logo"
-        /></a>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="destinations.html">Destionation</a></li>
-          <li><a href="inspiration.html">Inspiration</a></li>
-          <li><a href="tips.html">Tips</a></li>
-        </ul>
-      </nav>
-    </header>
+    <label for="hamburger-menu"><i class="fas fa-bars fa-lg" id="hamburger-icon"></i></label>
+    <input type="checkbox" id="hamburger-menu" />
+    <div class="logo-container">
+      <a href="index.html"><img src="images/logo.jpg" alt="Logo of the Happy Tourist" class="logo" /></a>
+    </div>
+    <nav id="main_nav" class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-media">
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-youtube fa-2x"></i>
+      </div>
+    </nav>
+    <nav id="sub_nav" class="navbar">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="destinations.html">Destionation</a></li>
+        <li class="sub_nav-logo__container">
+          <a href="index.html"><img src="images/logo.jpg" alt="Logo of the Happy Tourist" class="sub_nav-logo" /></a>
+        </li>
+        <li><a href="inspiration.html">Inspiration</a></li>
+        <li><a href="tips.html">Tips</a></li>
+      </ul>
+    </nav>
     <main>
       <section>
         <h1>All blog posts</h1>
         <p>Discover all of my blog posts I have ever made below!</p>
-        <img src="images/blogging.jpg" alt="picture of pencil and paper which represent writing blogs">
+        <img src="images/blogging.jpg" alt="picture of pencil and paper which represent writing blogs" />
         <div></div>
       </section>
       <section class="separator">
-        <img src="images/separator.jpg" alt="content separator">
+        <img src="images/separator.jpg" alt="content separator" />
       </section>
       <section class="post-list">
         <a href="" class="link_underline">View more</a>
       </section>
     </main>
     <footer>
-        <p id="copyright">Copyright @ 2021 The Happy Tourist</p>
+      <p id="copyright">Copyright @ 2021 The Happy Tourist</p>
     </footer>
   </body>
 </html>
