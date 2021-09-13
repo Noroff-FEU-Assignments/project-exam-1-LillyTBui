@@ -110,6 +110,64 @@
   body {
     font-size: 18px;
   }
+
+  #hamburger-icon {
+    display: none;
+  }
+
+  header > #main_nav {
+    order: 1;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background-color: var(--color-light-beige);
+  }
+
+  #main_nav ul {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+  }
+
+  li {
+    padding: 0px 10px;
+  }
+
+  .logo-container {
+    display: none;
+  }
+
+  header > #sub_nav {
+    order: 3;
+    display: block;
+  }
+
+  #sub_nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sub_nav ul li:nth-child(2)::before,
+  #sub_nav ul li:nth-child(5)::before {
+    content: url("https://img.icons8.com/material-sharp/10/000000/filled-circle.png");
+    color: var(--color-beige);
+    margin-right: 15px;
+  }
+
+  .navbar {
+    background-color: white;
+  }
+
+  .sub_nav-logo__container {
+    display: block;
+  }
+
+  .sub_nav-logo {
+    height: 140px;
+  }
+
   /* index */
   .landing-page {
     grid-template-columns: 400px 300px;
@@ -269,13 +327,14 @@
 }
 
 @media (min-width: 1200px) {
+}
+
+@media (min-width: 1300px) {
   /* index */
   .explore-all-post {
     height: 300px;
   }
-}
 
-@media (min-width: 1300px) {
   .general-post {
     width: 240px;
     height: 340px;

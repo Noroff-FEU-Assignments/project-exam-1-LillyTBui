@@ -42,6 +42,10 @@ header > #sub_nav {
   height: 90px;
 }
 
+.sub_nav-logo__container {
+  display: none;
+}
+
 #main_nav {
   top: 50px;
   width: 100%;
