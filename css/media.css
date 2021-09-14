@@ -1,3 +1,49 @@
+@media (min-width: 500px) {
+  /* blog */
+  .blog-cover {
+    position: relative;
+    height: 400px;
+    margin-top: 40px;
+  }
+
+  .blog-cover__img {
+    width: 300px;
+    height: 225px;
+    position: absolute;
+    left: 33%;
+  }
+
+  #blog-cover__background {
+    width: 300px;
+    height: 225px;
+    background-color: #edeef0;
+    position: absolute;
+    left: 30%;
+    top: 20px;
+  }
+
+  /* blog */
+  .blog-cover__text {
+    position: absolute;
+    z-index: 2000;
+    text-align: left;
+    top: 70px;
+    left: 5%;
+  }
+
+  .blog-cover__text h1 {
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--color-light-black);
+    width: fit-content;
+    padding: 0px 0px 5px 0px;
+  }
+
+  .blog-cover__text p {
+    padding: 30px 0px 0px 0px;
+    max-width: 320px;
+  }
+}
+
 @media (min-width: 600px) {
   /* index */
   .landing-page {
@@ -104,6 +150,20 @@
   .about_social-media {
     margin-bottom: 50px;
   }
+
+  .blog-cover__img {
+    left: 43%;
+  }
+
+  #blog-cover__background {
+    left: 40%;
+    top: 25px;
+  }
+
+  .blog-cover__text {
+    left: 15%;
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 800px) {
@@ -149,11 +209,12 @@
     align-items: center;
   }
 
-  .social-media .fab{
+  .social-media .fab {
     font-size: 1.5em;
   }
 
-  #sub_nav ul li:nth-child(2)::before, #sub_nav ul li:nth-child(5)::before {
+  #sub_nav ul li:nth-child(2)::before,
+  #sub_nav ul li:nth-child(5)::before {
     content: "\f111";
     font-family: "Font Awesome 5 Free";
     font-weight: 600;
@@ -161,7 +222,6 @@
     font-size: 0.5em;
     margin-right: 15px;
   }
-  
 
   .navbar {
     background-color: white;
@@ -301,6 +361,21 @@
   .explore-all-post {
     height: 220px;
   }
+
+  /* blog */
+  .blog-cover__img {
+    width: 400px;
+    height: 325px;
+  }
+
+  #blog-cover__background {
+    width: 400px;
+    height: 325px;
+  }
+
+  .blog-cover__text {
+    top: 90px;
+  }
 }
 
 @media (min-width: 1100px) {
@@ -362,5 +437,22 @@
   .viewport {
     width: 1050px;
     height: 450px;
+  }
+
+  /* blog */
+  .blog-cover__img {
+    left: 49%;
+  }
+
+  .blog-cover__text {
+    left: 24%;
+  }
+
+  .blog-cover__text p {
+    max-width: 400px;
+  }
+
+  #blog-cover__background {
+    left: 47%;
   }
 }

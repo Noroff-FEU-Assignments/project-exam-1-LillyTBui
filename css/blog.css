@@ -1,0 +1,32 @@
+.blog-cover {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.blog-cover__text {
+  background-color: white;
+  padding: 10px;
+  order: 2;
+}
+
+.blog-cover__text > * {
+  max-width: 270px;
+  padding: 10px;
+}
+
+.blog-cover__img {
+  width: 100%;
+  order: 1;
+}
+
+.separator__img {
+  display: none;
+}
+
+.separator-container {
+  width: 100%;
+  height: 100px;
+  background-image: url("../images/separator.jpg");
+}

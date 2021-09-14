@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Happy Tourist | Homepage</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/blog.css" />
     <link rel="stylesheet" href="css/media.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,14 +49,21 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>All blog posts</h1>
-        <p>Discover all of my blog posts I have ever made below!</p>
-        <img src="images/blogging.jpg" alt="picture of pencil and paper which represent writing blogs" />
-        <div></div>
+      <section class="blog-cover">
+        <div class="blog-cover__text">
+          <h1>All blog posts</h1>
+          <p>Discover all of my blog posts I have ever made below!</p>
+        </div>
+        <div id="blog-cover__background"></div>
+        <img
+          src="images/blogging.jpg"
+          alt="picture of pencil and paper which represent writing blogs"
+          class="blog-cover__img"
+        />
       </section>
       <section class="separator">
-        <img src="images/separator.jpg" alt="content separator" />
+        <div class="separator-container"></div>
+        <!--<img src="images/separator.jpg" alt="content separator" class="separator__img" />-->
       </section>
       <section class="post-list">
         <a href="" class="link_underline">View more</a>
