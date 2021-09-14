@@ -149,12 +149,19 @@
     align-items: center;
   }
 
-  #sub_nav ul li:nth-child(2)::before,
-  #sub_nav ul li:nth-child(5)::before {
-    content: url("https://img.icons8.com/material-sharp/10/000000/filled-circle.png");
+  .social-media .fab{
+    font-size: 1.5em;
+  }
+
+  #sub_nav ul li:nth-child(2)::before, #sub_nav ul li:nth-child(5)::before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
     color: var(--color-beige);
+    font-size: 0.5em;
     margin-right: 15px;
   }
+  
 
   .navbar {
     background-color: white;
