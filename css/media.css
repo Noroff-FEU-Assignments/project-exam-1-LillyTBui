@@ -397,32 +397,67 @@
   }
 
   /* blog-details */
+  .blog-specification__main {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    justify-content: center;
+    margin: 40px 0%;
+    gap: 0px 20px;
+  }
+
   .side-bar {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .side-bar_about {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   .side-bar img {
-    width: 300px;
+    width: 250px;
   }
 
   .side-bar p {
-    max-width: 300px;
+    max-width: 250px;
     margin: 20px 0px;
   }
 
   .side-bar_inspiration {
     max-width: 400px;
+    text-align: center;
+    background-color: var(--color-light-pink);
+    padding-bottom: 40px;
+  }
+
+  .side-bar_inspiration h2 {
+    margin: 20px;
+    font-family: "Great Vibes";
+    font-size: 2em;
+    padding-top: 20px;
   }
 
   .side-bar_inspiration img {
-    width: 180px;
-    width: 180px;
+    width: 140px;
+    width: 140px;
+  }
+
+  .post-details {
+    margin: 0px;
+  }
+
+  .inspiration-btn {
+    display: block;
+    margin: 30px auto 0px auto;
+    width: 101px;
+  }
+
+  .post-details__div {
+    max-width: 600px;
   }
 }
 
@@ -507,5 +542,17 @@
 
   #blog-cover__background {
     left: 47%;
+  }
+
+  /* blog details */
+  .blog-specification__main {
+    margin: 40px 5%;
+  }
+}
+
+@media (min-width: 1400px) {
+  /* blog details */
+  .blog-specification__main {
+    margin: 40px 10%;
   }
 }

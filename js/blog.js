@@ -5,17 +5,17 @@ const updateURL = newUrl + "&per_page=10";
 const postContainer = document.querySelector(".post-list");
 const viewBtn = document.querySelector(".post-view-btn");
 
-viewBtn.onclick = function(event){
+viewBtn.onclick = function (event) {
   event.preventDefault();
   const URL = newUrl + "&per_page=20";
   getPost2(URL);
   viewBtn.remove();
-}
+};
 
-async function getPost2(url){
+async function getPost2(url) {
   const response = await fetch(url);
   const posts = await response.json();
-  for(let i = 10; i <= 20; i++){
+  for (let i = 10; i <= 20; i++) {
     createPost(posts[i]);
   }
 }
@@ -38,7 +38,7 @@ function createPost(post) {
           <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" class="post-list__img" data-id="${post.id}">
           <h3 data-id="${post.id}">${day}/${month}/${year}</h3>
           <h2 data-id="${post.id}">${post.title.rendered}</h2>
-          <a class="blue-btn post-btn" data-id="${post.id}">View post</a>
+          <a href="../blog-specific.html" class="blue-btn post-btn" data-id="${post.id}">View post</a>
       </div>
   </a>`;
 }
@@ -49,4 +49,3 @@ postContainer.onclick = function (event) {
   const id = event.target.dataset.id;
   localStorage.setItem("post", JSON.stringify(id));
 };
-  
