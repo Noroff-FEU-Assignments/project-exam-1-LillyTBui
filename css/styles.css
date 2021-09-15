@@ -14,7 +14,7 @@ body {
 }
 
 h1,
-h2,
+h2, h3, h4, h5,
 li,
 a {
   font-family: "Montserrat";
@@ -24,6 +24,10 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  position: sticky;
+  top:0px;
+  background-color: white;
+  z-index: 5000;
 }
 
 header > #main_nav {

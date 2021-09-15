@@ -175,8 +175,9 @@
 }
 
 @media (min-width: 800px) {
-  body {
-    font-size: 18px;
+
+  header{
+    position: initial;
   }
 
   #hamburger-icon {

@@ -18,11 +18,12 @@ async function getPosts(url) {
 function createPost(post) {
   numbOfPost++;
   featuredContainer.innerHTML += `
-    <div class="post post${numbOfPost}">
-        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}">
-        <h2>${post.title.rendered}</h2>
+  <a href="../blog-specific.html">
+    <div class="post post${numbOfPost}" data-id="${post.id}">
+        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" data-id="${post.id}">
+        <h2 data-id="${post.id}">${post.title.rendered}</h2>
     </div>
-    `;
+  </a>`;
 }
 
 getPosts(featuredPost);
@@ -43,15 +44,25 @@ function createGeneralPost(post) {
   const year = date.getFullYear();
 
   postContainer.innerHTML += `
-    <div class="general-post">
-        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" class="post-img">
-        <h5 class="category-title">${post._embedded["wp:term"]["0"]["0"].name}</h5>
-        <h3>${post.title.rendered}</h3>
-        <h4>${day}/${month}/${year}</h4>
-    </div>`;
+  <a href="../blog-specific.html">
+    <div class="general-post" data-id="${post.id}">
+        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" class="post-img" data-id="${post.id}">
+        <h5 class="category-title" data-id="${post.id}">${post._embedded["wp:term"]["0"]["0"].name}</h5>
+        <h3 data-id="${post.id}">${post.title.rendered}</h3>
+        <h4 data-id="${post.id}">${day}/${month}/${year}</h4>
+    </div>
+  </a>`;
 }
 
 getGeneralPost(generalPost);
+
+featuredContainer.addEventListener("click", getId);
+postContainer.addEventListener("click", getId);
+
+function getId(event) {
+  const id = event.target.dataset.id;
+  localStorage.setItem("post", JSON.stringify(id));
+};
 
 /* Carousel slider */
 
