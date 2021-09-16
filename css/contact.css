@@ -28,18 +28,30 @@
 }
 
 .contact-info {
-  padding: 0px 0px 20px 30px;
+  margin: 50px;
 }
 
-.contact-info h2 {
-  font-weight: 600;
-  font-size: 16px;
+.contact-social {
+  margin-bottom: 50px;
 }
 
 .social {
-  border-left: 3px solid var(--color-blue);
-  margin-top: 30px;
-  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.social i {
+  font-size: 1.8em;
+}
+
+.social h2 {
+  font-size: 1.1em;
+}
+
+.social > * {
+  padding: 5px;
 }
 
 textarea,
