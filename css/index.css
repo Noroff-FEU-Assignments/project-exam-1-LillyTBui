@@ -41,6 +41,11 @@
   padding: 20px 0px;
 }
 
+.second-post h1 {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
 .post {
   text-align: center;
   margin: 10px auto;
