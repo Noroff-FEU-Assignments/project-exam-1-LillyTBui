@@ -1,7 +1,5 @@
 const list = document.querySelectorAll(".list-a");
-window.onunload = function () {
-  sessionStorage.removeItem("count");
-};
+localStorage.clear();
 
 /* show destination list */
 for (const item of list) {
@@ -13,6 +11,7 @@ for (const item of list) {
     let index;
 
     if (previousCount !== null) {
+      console.log(previousCount);
       for (let i = 0; i <= previousCount.length - 1; i++) {
         if (currentCount === previousCount[i]) {
           isSame = true;
@@ -29,6 +28,7 @@ for (const item of list) {
         localStorage.setItem("count", JSON.stringify(previousCount));
       }
     } else {
+      console.log("first");
       child.style.display = "block";
       const newList = [currentCount];
       localStorage.setItem("count", JSON.stringify(newList));
@@ -46,6 +46,5 @@ favoriteContainer.onclick = function (event) {
 
 listContainer.onclick = function (event) {
   const id = event.target.dataset.list;
-  console.log(id);
   localStorage.setItem("post", JSON.stringify(id));
 };

@@ -11,7 +11,7 @@ let numbOfPost = 0;
 async function getPosts(url) {
   const response = await fetch(url);
   const posts = await response.json();
-
+  console.log(posts);
   posts.forEach(createPost);
 }
 
@@ -20,7 +20,7 @@ function createPost(post) {
   featuredContainer.innerHTML += `
   <a href="../blog-specific.html">
     <div class="post post${numbOfPost}" data-id="${post.id}">
-        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" data-id="${post.id}">
+        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url}" data-id="${post.id}">
         <h2 data-id="${post.id}">${post.title.rendered}</h2>
     </div>
   </a>`;
@@ -62,7 +62,7 @@ postContainer.addEventListener("click", getId);
 function getId(event) {
   const id = event.target.dataset.id;
   localStorage.setItem("post", JSON.stringify(id));
-};
+}
 
 /* Carousel slider */
 

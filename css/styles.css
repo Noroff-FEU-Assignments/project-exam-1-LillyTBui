@@ -14,7 +14,10 @@ body {
 }
 
 h1,
-h2, h3, h4, h5,
+h2,
+h3,
+h4,
+h5,
 li,
 a {
   font-family: "Montserrat";
@@ -25,7 +28,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   position: sticky;
-  top:0px;
+  top: 0px;
   background-color: white;
   z-index: 5000;
 }
@@ -119,6 +122,11 @@ a {
   padding-bottom: 5px;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.link_underline:hover {
+  color: #a18167;
+  border-bottom: 2px solid #a18167;
 }
 
 /** Button **/

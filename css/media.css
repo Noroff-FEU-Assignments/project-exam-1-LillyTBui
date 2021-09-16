@@ -183,6 +183,13 @@
   .separator3 {
     display: block;
   }
+
+  /* blog details */
+  .post-details__img,
+  .size-full img {
+    width: 600px;
+    height: initial;
+  }
 }
 
 @media (min-width: 800px) {

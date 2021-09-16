@@ -65,7 +65,8 @@
   width: 100%;
   text-align: center;
   margin: 20px 0px 40px 0px;
-  color: var(--color-blue);
+  color: #a18167;
+  font-size: 1.3em;
 }
 
 .favorite-destinations div {
@@ -76,7 +77,7 @@
 }
 
 .favorite-destinations div h4 {
-  background-color: var(--color-blue);
+  background-color: #a18167;
   border: 6px double white;
   margin: auto;
   text-align: center;
