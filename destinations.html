@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Tourist | Destinations</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/destinations.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:ital,wght@0,400;1,400;1,600&family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/b9235904b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <label for="hamburger-menu"><i class="fas fa-bars fa-lg" id="hamburger-icon"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <div class="logo-container">
+          <a href="index.html"><img src="images/logo.jpg" alt="Logo of the Happy Tourist" class="logo" /></a>
+        </div>
+        <nav id="main_nav" class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="social-media">
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+          </div>
+        </nav>
+        <nav id="sub_nav" class="navbar">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li class="sub_nav-logo__container">
+              <a href="index.html"><img src="images/logo.jpg" alt="Logo of the Happy Tourist" class="sub_nav-logo" /></a>
+            </li>
+            <li><a href="inspiration.html">Inspiration</a></li>
+            <li><a href="tips.html">Tips</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+          <section class="destinations-cover">
+              <h1>Destinations</h1>
+            <div class="world-map">
+            </div>
+            <section class="destination-list__container">
+                <h2>List of destinations</h2>
+                <div class="destination-list">
+                    <ol>
+                        <li class="list-a" data-id="1">Africa
+                            <ul>
+                                <li>Algeria</li>
+                                <li>South Africa</li>
+                            </ul>
+                        </li>
+                        <li class="list-a" data-id="2">Asia
+                            <ul>
+                                <li>Japan</li>
+                                <li>Thailand</li>
+                                <li>Malaysia</li>
+                            </ul>
+                        </li>
+                        <li class="list-a" data-id="3">The caribbean
+                            <ul>
+                                <li>The Bahamas</li>
+                            </ul>
+                        </li>
+                        <li class="list-a" data-id="4">Europe
+                            <ul>
+                                <li>France</li>
+                                <li>Spain</li>
+                            </ul>
+                        </li>
+                        <li class="list-a" data-id="5">The middle east
+                            <ul>
+                                <li>The United Arab Emirates</li>
+                            </ul>
+                        </li>
+                        <li class="list-a" data-id="6">North America
+                            <ul>
+                                <li>Canada</li>
+                                <li>The United States</li>
+                            </ul>
+                        </li>
+                        <li class="list-a" data-id="7">South America
+                            <ul>
+                                <li>Brazil</li>
+                                <li>Peru</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div> 
+            </section>
+          </section>
+          <section class="favorite-destinations">
+              <h3>My favorite destinations</h3>
+              <div class="favorite-japan">
+                  <a href="">
+                    <img src="images/shrine-sm.jpg" alt="red shrine">
+                    <h4>Japan</h4>
+                  </a>
+              </div>
+              <div class="favorite-thailand">
+                  <a href="">
+                    <img src="images/beach-sm.jpg" alt="beach in Thailand">
+                    <h4>Thailand</h4>
+                  </a> 
+              </div>
+              <div class="favorite-bahamas">
+                  <a href="">
+                    <img src="images/dark-beach-sm.jpg" alt="beach view from airplane">
+                    <h4>Bahamas</h4>
+                  </a>
+              </div>
+          </section>
+      </main>
+      <footer>
+        <p id="copyright">Copyright @ 2021 The Happy Tourist</p>
+      </footer>
+      <script src="js/destinations.js" type="module"></script>
+</body>
+</html>
