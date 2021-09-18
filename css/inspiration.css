@@ -1,60 +1,101 @@
-.post-card{
-    background-color: var(--color-light-beige);
-    display: flex;
-    justify-content: center;
-    max-width: 1000px;
-    margin: 40px auto;
+.post-card {
+  background-color: var(--color-light-beige);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
 }
 
-.post-card >*{
-    margin: 30px;
+.post-card img {
+  margin: 30px 0px;
+  max-width: 250px;
+  max-height: 250px;
 }
 
-.post-card img{
-    max-width: 400px;
-    max-height: 400px;
+.post-card__separator {
+  display: none;
+  width: 1px;
+  height: 400px;
+  background-color: var(--color-light-black); /*#a18167*/
 }
 
-.post-card__separator{
-    width: 1px;
-    height: 400px;
-    background-color: var(--color-light-black); /*#a18167*/
+.post-card__text {
+  max-width: 270px;
+  margin: 20px auto 50px auto;
+  text-align: center;
 }
 
-.post-card__text{
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-rows: 1fr 1fr;
+.post-card__text h2 {
+  font-family: "Great Vibes";
+  color: black;
+  font-size: 2em;
 }
 
-.post-card__text div{
-    grid-column: 1/3;
-    grid-row: 2/3;
+.post-card__text p {
+  max-width: 500px;
+  margin: 20px 0px;
 }
 
-.post-card__text h2{
-    font-family: "Great Vibes";
-    color: black;
-    font-size: 2em;
+.post-card__text img {
+  display: none;
+  width: 200px;
+  grid-column: 2/3;
 }
 
-.post-card__text p{
-    max-width: 500px;
-    margin: 20px 0px;
+.photo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px 60px 0px;
 }
 
-.post-card__text img{
-    width: 200px;
-    grid-column: 2/3;
+#photo-container__title {
+  color: var(--color-blue);
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  margin: 40px;
+  text-align: center;
 }
 
-.photo-container{
-    display: flex;
-    justify-content: center;
-    margin: 30px;
+.photo-div {
+  position: relative;
+  margin: 10px;
 }
-#photo-container__title{
-    color: var(--color-blue);
-    text-transform: uppercase;
-    font-family: "Montserrat";
+
+.photo-div:hover .photo-div__content {
+  opacity: 1;
+}
+
+.photo-div img {
+  width: 260px;
+  height: 260px;
+}
+
+.photo-div__content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 260px;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: rgba(32, 32, 32, 0.685);
+}
+
+.photo-div__content figure,
+.photo-div__content p,
+.photo-div__content h2 {
+  display: none;
+}
+
+/* inspiration */
+.photo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 900px;
 }

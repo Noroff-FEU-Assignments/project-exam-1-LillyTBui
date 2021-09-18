@@ -12,6 +12,7 @@
   text-align: center;
   margin: 20px 0px;
   order: 3;
+  display: none;
 }
 
 .first-post h2 {
@@ -24,16 +25,11 @@
   margin: auto;
 }
 
-.first-post img {
-  padding-top: 20px;
-  height: 200px;
-  width: 200px;
-}
-
 .second-post {
   background-color: var(--color-light-beige);
   padding: 40px;
   order: 4;
+  margin-top: 30px;
 }
 
 .second-post p {
@@ -49,11 +45,15 @@
 .post {
   text-align: center;
   margin: 10px auto;
-  max-width: 200px;
+  max-width: 300px;
   order: 2;
 }
 
-.post img,
+.post img {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
 .post-img {
   width: 200px;
   height: 250px;
@@ -65,10 +65,7 @@
   padding: 10px;
   font-size: 1em;
   font-weight: 400;
-}
-
-.post h2:hover {
-  font-weight: bold;
+  margin: auto;
 }
 
 /** Latest posts **/

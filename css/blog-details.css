@@ -42,6 +42,10 @@
   align-items: center;
 }
 
+.post-details__div h2 {
+  display: none;
+}
+
 .post-details__div > * {
   margin: 20px 0px;
 }

@@ -1,4 +1,3 @@
-//const baseURL = "https://sunnyday.one/happy-tourist/wp-json/wp/v2/posts";
 const baseURL = "https://sunnyday.one/happy-tourist/wp-json/wp/v2/posts?_embed";
 const featuredPost = baseURL + "&tags=4";
 const generalPost = baseURL + "&categories_exclude=1";
