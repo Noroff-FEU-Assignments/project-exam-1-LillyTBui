@@ -15,6 +15,7 @@ function createPost(post) {
   const day = date.getDay();
   const month = date.getMonth();
   const year = date.getFullYear();
+  document.title = "My Blog | " + post.title.rendered;
 
   postContainer.innerHTML += `
         <div class="post-details" data-id="${post.id}">
