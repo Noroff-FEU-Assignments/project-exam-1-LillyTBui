@@ -11,7 +11,6 @@ for (const item of list) {
     let index;
 
     if (previousCount !== null) {
-      console.log(previousCount);
       for (let i = 0; i <= previousCount.length - 1; i++) {
         if (currentCount === previousCount[i]) {
           isSame = true;
@@ -28,7 +27,6 @@ for (const item of list) {
         localStorage.setItem("count", JSON.stringify(previousCount));
       }
     } else {
-      console.log("first");
       child.style.display = "block";
       const newList = [currentCount];
       localStorage.setItem("count", JSON.stringify(newList));

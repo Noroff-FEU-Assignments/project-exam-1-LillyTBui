@@ -71,7 +71,7 @@
 /** Latest posts **/
 .latest-post {
   text-align: center;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 60px 30px;
 }
 

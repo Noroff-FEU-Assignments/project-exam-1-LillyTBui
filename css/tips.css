@@ -1,0 +1,44 @@
+.tips-post__container >*{
+    background-color: rgba(245, 242, 237, 0.712);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.tips-div{
+    max-width: 300px;
+    background-color: white;
+    margin: 40px 20px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.tips-div img{
+    max-width: 100%;
+    height: 300px;
+}
+
+.tips-div__content figure, .tips-div__content h2, .tips-div__content p:nth-child(n+2){ 
+    display: none;
+}
+
+.tips-div h2{   
+    padding: 20px 10px 10px 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.tips-div__content{
+    padding: 20px 10px 40px 20px;
+}
+
+.tips_link{
+    color: rgb(214, 139, 90);
+    border-bottom: 2px solid rgb(214, 139, 90);
+    margin-left: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+

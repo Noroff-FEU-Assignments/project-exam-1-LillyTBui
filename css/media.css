@@ -585,6 +585,17 @@
   .contact-social > * {
     margin: 10px 20px;
   }
+
+  /* tips */
+  .tips-div{
+    max-width: 350px;
+    margin: 15px;
+  }
+
+  .tips-div img{
+    max-width: 100%;
+    height: 350px;
+}
 }
 
 @media (min-width: 1300px) {

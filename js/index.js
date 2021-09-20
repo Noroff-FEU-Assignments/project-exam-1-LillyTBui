@@ -4,13 +4,13 @@ const generalPost = baseURL + "&categories_exclude=1";
 
 const featuredContainer = document.querySelector(".landing-page");
 const postContainer = document.querySelector(".latest-post__container");
+const firstPost = document.querySelectorAll(".first-post");
 
 let numbOfPost = 0;
 
 async function getPosts(url) {
   const response = await fetch(url);
   const posts = await response.json();
-  console.log(posts);
   posts.forEach(createPost);
 }
 
@@ -57,6 +57,7 @@ getGeneralPost(generalPost);
 
 featuredContainer.addEventListener("click", getId);
 postContainer.addEventListener("click", getId);
+firstPost.addEventListener("click", getId);
 
 function getId(event) {
   const id = event.target.dataset.id;

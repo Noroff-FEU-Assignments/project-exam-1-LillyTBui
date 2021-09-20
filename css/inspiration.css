@@ -53,7 +53,7 @@
 #photo-container__title {
   color: var(--color-blue);
   text-transform: uppercase;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   margin: 40px;
   text-align: center;
 }

@@ -10,7 +10,7 @@
 body {
   color: var(--color-light-black);
   font-size: 16px;
-  font-family: "Lora";
+  font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,
@@ -20,7 +20,7 @@ h4,
 h5,
 li,
 a {
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 header {
