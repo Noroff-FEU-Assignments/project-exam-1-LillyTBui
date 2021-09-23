@@ -68,6 +68,10 @@
   margin: auto;
 }
 
+.post h2:hover{
+  color: gray;
+}
+
 /** Latest posts **/
 .latest-post {
   text-align: center;

@@ -8,6 +8,33 @@ async function getPost(url) {
   const response = await fetch(url);
   const post = await response.json();
   createPost(post);
+
+  const div = document.querySelectorAll(".wp-block-image");
+ 
+  for (let i = 0; i < div.length; i++) {
+    let img = div[i];
+
+    img.innerHTML += `<div class="modal modal${i}">
+      <div class="modal-content">
+        <img src="${img.getElementsByTagName("IMG")[0].src}">
+        <i class="fas fa-times-circle circle${i}"></i>
+      </div>
+    </div>`;
+
+    const className = ".modal" + i;
+    const circleName = ".circle" + i;
+    const modal = document.querySelector(className);
+    const circle = document.querySelector(circleName);
+    const imgMain = img.getElementsByTagName("IMG")[0];
+  
+    imgMain.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    circle.onclick =  function () {
+      modal.style.display = "none";
+    };
+  }
 }
 
 function createPost(post) {
