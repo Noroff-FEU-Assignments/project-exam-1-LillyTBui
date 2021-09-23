@@ -16,7 +16,7 @@ async function getPost(url) {
 
     img.innerHTML += `<div class="modal modal${i}">
       <div class="modal-content">
-        <img src="${img.getElementsByTagName("IMG")[0].src}">
+        <img id="modal-img${i}" src="${img.getElementsByTagName("IMG")[0].src}">
         <i class="fas fa-times-circle circle${i}"></i>
       </div>
     </div>`;

@@ -7,8 +7,8 @@
 
 .post-details__img,
 .size-full img {
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
 }
 
 .post-details h2 {
@@ -96,19 +96,25 @@
   height: 100%;
 }
 
+#modal-img0, #modal-img1, #modal-img2{
+  width: 280px;
+  height: 280px;
+}
+
 .modal-content{
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-height: 95%;
 }
 
 .fa-times-circle{
   color: white;
   font-size: xx-large;
   position: absolute;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .fa-times-circle:hover{

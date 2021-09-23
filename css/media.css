@@ -4,6 +4,12 @@
   .separator2 {
     display: block;
   }
+
+  /*modal*/
+  #modal-img0, #modal-img1, #modal-img2{
+    width: 450px;
+    height: 450px;
+  }
 }
 
 @media (min-width: 600px) {
@@ -145,8 +151,17 @@
   /* blog details */
   .post-details__img,
   .size-full img {
-    width: 600px;
-    height: initial;
+    width: 400px;
+    height: 400px;
+  }
+
+  #modal-img0, #modal-img1, #modal-img2{
+    width: 500px;
+    height: 500px;
+  }
+
+  .fa-times-circle{
+    margin-top: 30px;
   }
 }
 
@@ -531,6 +546,20 @@
   /* destinations */
   .favorite-destinations div {
     margin: 20px;
+  }
+
+  /* modaø */
+  .modal-content{
+    display: block;
+  }
+
+  .fa-times-circle{
+    margin: 0px 0px 0px 20px;
+  }
+
+  #modal-img0, #modal-img1, #modal-img2{
+    width: 600px;
+    height: 600px;
   }
 }
 
