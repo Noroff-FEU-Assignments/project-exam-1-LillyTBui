@@ -12,12 +12,11 @@ async function getTips(url) {
 function createPost(post) {
   tipsContainer.innerHTML += `
       <div class="tips-div" data-id="${post.id}">
-          <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url}" data-id="${post.id}">
+          <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url}" data-id="${post.id}" alt="${post._embedded["wp:featuredmedia"]["0"].alt_text}">
           <h2>${post.title.rendered}</h2>
           <div class="tips-div__content" data-id="${post.id}">${post.content.rendered}</div>
           <a href="../blog-specific.html" class="link_underline tips_link" data-id="${post.id}">Read more</a>
-      </div>`
-    ;
+      </div>`;
 }
 
 getTips(baseURL);
@@ -26,4 +25,3 @@ tipsContainer.onclick = function (event) {
   const id = event.target.dataset.id;
   localStorage.setItem("post", JSON.stringify(id));
 };
-

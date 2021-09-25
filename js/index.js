@@ -4,7 +4,6 @@ const generalPost = baseURL + "&categories_exclude=1";
 
 const featuredContainer = document.querySelector(".landing-page");
 const postContainer = document.querySelector(".latest-post__container");
-const firstPost = document.querySelectorAll(".first-post");
 
 let numbOfPost = 0;
 
@@ -19,7 +18,7 @@ function createPost(post) {
   featuredContainer.innerHTML += `
   <a href="../blog-specific.html">
     <div class="post post${numbOfPost}" data-id="${post.id}">
-        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url}" data-id="${post.id}">
+        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url}" data-id="${post.id}" alt="${post._embedded["wp:featuredmedia"]["0"].alt_text}">
         <h2 data-id="${post.id}">${post.title.rendered}</h2>
     </div>
   </a>`;
@@ -45,7 +44,7 @@ function createGeneralPost(post) {
   postContainer.innerHTML += `
   <a href="../blog-specific.html">
     <div class="general-post" data-id="${post.id}">
-        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" class="post-img" data-id="${post.id}">
+        <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" class="post-img" data-id="${post.id}" alt="${post._embedded["wp:featuredmedia"]["0"].alt_text}">
         <h5 class="category-title" data-id="${post.id}">${post._embedded["wp:term"]["0"]["0"].name}</h5>
         <h3 data-id="${post.id}">${post.title.rendered}</h3>
         <h4 data-id="${post.id}">${day}/${month}/${year}</h4>
@@ -57,7 +56,6 @@ getGeneralPost(generalPost);
 
 featuredContainer.addEventListener("click", getId);
 postContainer.addEventListener("click", getId);
-firstPost.addEventListener("click", getId);
 
 function getId(event) {
   const id = event.target.dataset.id;

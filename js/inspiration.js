@@ -14,7 +14,7 @@ function createPost(post) {
   photo.innerHTML += `
     <a href="../blog-specific.html" data-id="${post.id}">
       <div class="photo-div" data-id="${post.id}">
-          <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url}" data-id="${post.id}">
+          <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.full.source_url}" data-id="${post.id}" alt="${post._embedded["wp:featuredmedia"]["0"].alt_text}">
           <div class="photo-div__content" data-id="${post.id}">${post.content.rendered}</div>
       </div>
     </a>`;

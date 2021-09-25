@@ -35,7 +35,7 @@ function createPost(post) {
   postContainer.innerHTML += `
   <a href="../blog-specific.html">
       <div class="post-list__div" data-id="${post.id}">
-          <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" class="post-list__img" data-id="${post.id}">
+          <img src="${post._embedded["wp:featuredmedia"]["0"].media_details.sizes.medium.source_url}" class="post-list__img" data-id="${post.id}" alt="${post._embedded["wp:featuredmedia"]["0"].alt_text}">
           <h3 data-id="${post.id}">${day}/${month}/${year}</h3>
           <h2 data-id="${post.id}">${post.title.rendered}</h2>
           <a href="../blog-specific.html" class="blue-btn post-btn" data-id="${post.id}">View post</a>

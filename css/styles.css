@@ -187,3 +187,7 @@ a {
   display: flex;
   margin: 20px auto;
 }
+
+.active {
+  border-bottom: 1px solid var(--color-light-black);
+}
