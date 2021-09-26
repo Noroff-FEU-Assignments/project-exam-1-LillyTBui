@@ -6,7 +6,9 @@
   }
 
   /*modal*/
-  #modal-img0, #modal-img1, #modal-img2{
+  #modal-img0,
+  #modal-img1,
+  #modal-img2 {
     width: 450px;
     height: 450px;
   }
@@ -155,12 +157,14 @@
     height: 400px;
   }
 
-  #modal-img0, #modal-img1, #modal-img2{
+  #modal-img0,
+  #modal-img1,
+  #modal-img2 {
     width: 500px;
     height: 500px;
   }
 
-  .fa-times-circle{
+  .fa-times-circle {
     margin-top: 30px;
   }
 }
@@ -297,7 +301,7 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    font-size: 14px;
+    font-size: 0.9em;
     padding: 20px;
     margin-top: 10px;
   }
@@ -357,7 +361,7 @@
   }
 
   .category-btn {
-    font-size: 16px;
+    font-size: 1em;
     padding: 10px 40px;
   }
 
@@ -549,15 +553,17 @@
   }
 
   /* modaø */
-  .modal-content{
+  .modal-content {
     display: block;
   }
 
-  .fa-times-circle{
+  .fa-times-circle {
     margin: 0px 0px 0px 20px;
   }
 
-  #modal-img0, #modal-img1, #modal-img2{
+  #modal-img0,
+  #modal-img1,
+  #modal-img2 {
     width: 600px;
     height: 600px;
   }
@@ -616,15 +622,15 @@
   }
 
   /* tips */
-  .tips-div{
+  .tips-div {
     max-width: 350px;
     margin: 15px;
   }
 
-  .tips-div img{
+  .tips-div img {
     max-width: 100%;
     height: 350px;
-}
+  }
 }
 
 @media (min-width: 1300px) {

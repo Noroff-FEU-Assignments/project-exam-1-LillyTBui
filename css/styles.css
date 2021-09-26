@@ -9,7 +9,7 @@
 
 body {
   color: var(--color-light-black);
-  font-size: 16px;
+  font-size: 1em;
   font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -57,7 +57,7 @@ header > #sub_nav {
   top: 50px;
   width: 100%;
   z-index: 1000;
-  font-size: 14px;
+  font-size: 1em;
 }
 
 .navbar {

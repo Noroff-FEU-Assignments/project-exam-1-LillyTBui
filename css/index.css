@@ -68,7 +68,7 @@
   margin: auto;
 }
 
-.post h2:hover{
+.post h2:hover {
   color: gray;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .latest-post-title {
-  font-size: 16px;
+  font-size: 1em;
   margin: 10px;
   color: var(--color-blue);
 }
@@ -124,7 +124,7 @@
 .general-post h3 {
   text-transform: uppercase;
   margin: 10px 0px;
-  font-size: 16px;
+  font-size: 1em;
   max-width: 200px;
 }
 
@@ -151,7 +151,7 @@
 }
 
 .explore-all-post h2 {
-  font-size: 22px;
+  font-size: 1.7em;
   margin-bottom: 30px;
   color: var(--color-light-black);
   letter-spacing: 1px;
@@ -182,7 +182,7 @@
 
 .categories h2 {
   font-family: "Great Vibes";
-  font-size: 40px;
+  font-size: 2.5em;
   margin-bottom: 20px;
 }
 
@@ -207,6 +207,6 @@
   color: white;
   text-transform: uppercase;
   padding: 10px 12px;
-  font-size: 14px;
+  font-size: 1em;
   background-color: var(--color-blue);
 }
