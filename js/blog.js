@@ -1,15 +1,15 @@
 const baseURL = "https://sunnyday.one/happy-tourist/wp-json/wp/v2/posts?_embed";
-const newUrl = baseURL + "&categories_exclude=1";
-const updateURL = newUrl + "&per_page=10";
+const updateURL = baseURL + "&per_page=10";
+let url = updateURL + "&order=desc";
 
 const postContainer = document.querySelector(".post-list");
 const viewBtn = document.querySelector(".post-view-btn");
 
 viewBtn.onclick = function (event) {
   event.preventDefault();
-  const URL = newUrl + "&per_page=20";
+  const URL = url + "&per_page=20";
   getPost2(URL);
-  viewBtn.remove();
+  viewBtn.style.display = "none";
 };
 
 async function getPost2(url) {
@@ -23,7 +23,24 @@ async function getPost2(url) {
 async function getPost(url) {
   const response = await fetch(url);
   const posts = await response.json();
-  posts.forEach(createPost);
+  if(posts.length > 0){
+    posts.forEach(createPost);
+    
+  }
+  else{
+    postContainer.innerHTML = `
+    <div class="error-message">
+    <i class="fas fa-exclamation-circle"></i>
+    <h2>Unfortunately we do not have any posts matching your search</h2>
+    </div>`;
+  }
+
+  if(posts.length < 10){
+    viewBtn.style.display = "none";
+  }
+  else{
+    viewBtn.style.display = "initial";
+  }
 }
 
 function createPost(post) {
@@ -43,9 +60,37 @@ function createPost(post) {
   </a>`;
 }
 
-getPost(updateURL);
+getPost(url);
 
 postContainer.onclick = function (event) {
   const id = event.target.dataset.id;
   localStorage.setItem("post", JSON.stringify(id));
 };
+
+
+/* sortby */
+const sort = document.querySelector("#sort");
+
+sort.onchange = function(){
+  if(sort.value == "newest"){
+    url = updateURL + "&order=desc";
+  }
+  else if(sort.value == "oldest"){
+    url = updateURL + "&order=asc";
+  }
+
+  postContainer.innerHTML = "";
+  getPost(url);
+}
+
+let search = document.querySelector("#search");
+
+search.addEventListener("keyup", function(event){
+  if(event.keyCode === 13){
+    event.preventDefault();
+    const input = search.value;
+    url = updateURL + "&search=" + input;
+    postContainer.innerHTML = "";
+    getPost(url);
+  }
+})

@@ -105,6 +105,16 @@
   .destinations-cover h1 {
     font-size: 2.5em;
   }
+
+  /* blog */
+  .filter{
+    max-width: 75%;
+    flex-direction: row;
+  }
+
+  .search-container{
+    margin: 0px;
+  }
 }
 
 @media (min-width: 700px) {
