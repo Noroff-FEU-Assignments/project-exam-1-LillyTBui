@@ -1,3 +1,25 @@
+.sortBy{
+  text-align: end;
+
+}
+
+.filter{
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.search-container{
+  margin: 10px;
+}
+
+#search, #sort{
+  border-radius: 15px;
+  border: 1px solid gray;
+  padding: 4px;
+}
+
 .post-list__container {
   text-align: center;
   margin-bottom: 60px;
@@ -44,4 +66,24 @@
 .post-view-btn {
   font-weight: 900;
   font-size: 1.2em;
+}
+
+.error-message{
+  max-width: 800px;
+  border: 1px solid red;
+  padding: 20px;
+  background-color: rgba(255, 0, 0, 0.342);
+  color: red;
+  display: flex;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.fa-exclamation-circle{
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.error-message h2{
+  font-size: 1em;
 }
